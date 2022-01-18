@@ -1,0 +1,35 @@
+@import "../../styles/Variables.scss";
+
+.centers {
+  position: relative;
+  padding-top: 12rem;
+
+  &__center {
+    position: relative;
+  }
+  &__date {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: translate(1rem, 0.3rem);
+    text-align: center;
+    color: $color-primary;
+    font-weight: 600;
+    &--month {
+      font-size: 1rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    &--day {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+  }
+  &__tags {
+    display: flex;
+    gap: 1rem;
+    padding-inline-start: 4.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+}

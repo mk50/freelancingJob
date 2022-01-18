@@ -1,0 +1,92 @@
+
+{
+"request": {
+    "method": "POST",
+    "header": [
+        {
+            "key": "Authorization",
+            "value": "{{authtoken}}",
+            "type": "text"
+        },
+        {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+        }
+    ],
+    "body": "{user_id,center_id,center_type_id,start_date}",
+    "url": "getchecklist"
+},
+"response": [{
+    "title": "success",
+    "message": "",
+    "data": {
+        "submission_id":1,
+        "last_audit_date":"2021-09-12",
+        "previous_checklist":[{
+            "question_id":1,
+            "due_date":"2021-10-21",
+            "assigned_to":[{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                },{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                },{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                }]
+        }],
+        "checklist":[
+            {
+                "checklist_module":"Facility",
+                "id":1,
+                "questions":[{
+                        "question_id":1,
+                        "question":"",
+                        "answer_type":"",
+                        "default_days":""
+                    },
+                    {
+                        "question_id":1,
+                        "question":"",
+                        "answer_type":"",
+                        "default_days":""
+                    },
+                    {
+                        "question_id":1,
+                        "question":"",
+                        "answer_type":"",
+                        "default_days":""
+                    }]
+            },
+            {
+                "checklist_module":"Health",
+                "id":1,
+                "questions":[{
+                    "question_id":1,
+                    "question":"",
+                    "answer_type":"",
+                    "default_days":""
+                },
+                {
+                    "question_id":1,
+                    "question":"",
+                    "answer_type":"",
+                    "default_days":""
+                },
+                {
+                    "question_id":1,
+                    "question":"",
+                    "answer_type":"",
+                    "default_days":""
+                }]
+            }
+        ]
+    },
+    "status": true
+}]
+}

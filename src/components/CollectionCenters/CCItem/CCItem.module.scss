@@ -1,0 +1,36 @@
+@import "../../../styles/Variables.scss";
+
+.ccitem {
+  padding-inline-start: 4.5rem;
+  padding-inline-end: 3rem;
+  padding-block: 1rem;
+  min-height: 6rem;
+  @media screen and (device-aspect-ratio: 40/71) {
+    padding-inline-end: 3.5rem;
+  }
+  &__title {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-right: 3rem;
+  }
+  &__center {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $color-primary;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+  &__navigator {
+    position: absolute;
+    top: 0.3rem;
+    right: -0.5rem;
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+  }
+  &__address {
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+    font-weight: 600;
+  }
+}

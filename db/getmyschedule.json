@@ -1,0 +1,100 @@
+
+{
+    "request": {
+        "method": "GET",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "{{authtoken}}",
+                "type": "text"
+            },
+            {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+            }
+        ],
+        "body": "{user_id}",
+        "url": "getmyschedule"
+    },
+
+    "response" :
+    {
+        "title": "success",
+        "message": "states",
+        "data": [{
+            "2021-10-14":{
+                "count":[{
+                        "audit_complete" :1,
+                        "audit_pending":2,
+                        "training_completed":1,
+                        "training_pending":1
+                    }
+                ],
+                "center_list":[
+                    {
+                        "id":1,
+                        "center_name":"",
+                        "center_type":"",
+                        "center_type_id":1,
+                        "last_audit_date":"2021-10-10",
+                        "latitude":"",
+                        "longitude":"",
+                        "premise_size":"",
+                        "audit_status":"Pending",
+                        "location":""
+                    },
+                    {
+                        "id":2,
+                        "center_name":"",
+                        "center_type":"",
+                        "center_type_id":1,
+                        "last_audit_date":"2021-10-10",
+                        "latitude":"",
+                        "longitude":"",
+                        "premise_size":"",
+                        "audit_status":"Completed",
+                        "location":""
+                    }
+                ]
+                
+            },
+            "2021-10-15":{
+                "count":[{
+                        "audit_complete" :1,
+                        "audit_pending":2,
+                        "training_completed":1,
+                        "training_pending":1
+                    }
+                ],
+                "center_list":[
+                    {
+                        "id":1,
+                        "center_name":"",
+                        "center_type":"",
+                        "center_type_id":1,
+                        "last_audit_date":"2021-10-10",
+                        "latitude":"",
+                        "longitude":"",
+                        "premise_size":"",
+                        "audit_status":"Completed",
+                        "location":""
+                    },
+                    {
+                        "id":2,
+                        "center_name":"",
+                        "center_type":"",
+                        "center_type_id":1,
+                        "last_audit_date":"2021-10-10",
+                        "latitude":"",
+                        "longitude":"",
+                        "premise_size":"",
+                        "audit_status":"Pending",
+                        "location":""
+                    }
+                ]
+            }
+        }],
+        "audit_status": true
+    }
+}

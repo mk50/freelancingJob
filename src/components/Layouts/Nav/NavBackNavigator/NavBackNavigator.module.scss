@@ -1,0 +1,17 @@
+@import "../../../../styles/Variables.scss";
+
+.nav__back {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  color: $color-grey-dark-2;
+  &--btn {
+    transform: translateY(0.25rem);
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  &--title {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../styles/Variables.scss";
+
+.nav-ctas-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  &__burger {
+  }
+  &__logo {
+    width: 5rem;
+    transform: translateY(-2px);
+  }
+  &__search {
+    color: $color-grey-dark;
+  }
+}

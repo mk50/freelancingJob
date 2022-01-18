@@ -1,0 +1,40 @@
+@import "../../../styles/Variables.scss";
+
+.assign {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  &__wrapper {
+    width: 100%;
+    border: 1px solid $color-grey-light-2;
+    padding: 1rem;
+  }
+  &__tags {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & > div:not(:first-child) {
+      cursor: pointer;
+    }
+  }
+  &__input {
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    outline: none;
+  }
+  &__removeable {
+    position: relative;
+    & > div {
+      padding-inline-end: 2rem !important;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    right: 0.6rem;
+    font-size: 1.2rem;
+    color: $color-primary-dark;
+  }
+}

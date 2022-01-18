@@ -1,0 +1,14 @@
+@import "../../../../styles/Variables.scss";
+
+.nav__ctas {
+  column-gap: 2rem;
+  transform: translateY(0.13rem);
+  color: $color-primary;
+  font-size: 1.8rem;
+  &--primary {
+    cursor: pointer;
+  }
+  &--secondary {
+    cursor: pointer;
+  }
+}

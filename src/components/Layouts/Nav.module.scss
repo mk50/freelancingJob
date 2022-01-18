@@ -1,0 +1,13 @@
+@import "../../styles/Variables.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding-block: 1rem;
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+}

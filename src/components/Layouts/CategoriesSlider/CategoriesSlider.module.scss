@@ -1,0 +1,101 @@
+@import "../../../styles/Variables.scss";
+
+.cat-slider {
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 6rem;
+  // background-color: $color-white;
+  &__wrapper {
+    // position: relative;
+    // height: 6rem;
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $color-white;
+    z-index: 3;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    font-size: 3rem;
+    align-items: center;
+    height: 100%;
+    color: $color-grey-light-2;
+    border-top: 1px solid $color-grey-light;
+    width: calc(100% * 13);
+    padding: 0 4rem;
+    transition: all 0.5s ease;
+  }
+  &__item {
+    position: relative;
+    align-self: center;
+    width: 7rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:not(:last-of-type) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: 30%;
+        transform: translateY(-45%);
+        width: 1px;
+        height: 60%;
+        background-color: $color-grey-light;
+      }
+    }
+  }
+  &__icon {
+    font-size: 2.5rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.3rem;
+    border-radius: 0.2rem;
+    &--active {
+      background-color: $color-primary-light;
+      border: 1px solid $color-grey-light;
+    }
+    &--active > svg > path {
+      fill: $color-primary;
+    }
+  }
+  &__item:hover &__icon {
+    background-color: $color-primary-light;
+    fill: $color-primary;
+    border: 1px solid $color-grey-light;
+  }
+  &__item:hover &__icon > svg > path {
+    fill: $color-primary;
+  }
+  &__controllers {
+    &--left,
+    &--right {
+      position: absolute;
+      top: 51%;
+      transform: translateY(-50%);
+      width: 3rem;
+      height: 99%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      background: $color-white;
+      color: $color-grey-light-2;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
+}

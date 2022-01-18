@@ -1,0 +1,15 @@
+@import "../../styles/Variables.scss";
+
+.main {
+  &--date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: $color-white;
+    border-top: 1px solid $color-grey-light;
+    border-bottom: 1px solid $color-grey-dark-5;
+    padding-left: 2rem;
+    position: sticky;
+    top: 9.8rem;
+    z-index: 9;
+  }
+}

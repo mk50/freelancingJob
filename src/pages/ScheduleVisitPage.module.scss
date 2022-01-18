@@ -1,0 +1,12 @@
+.schedule-visit {
+  &__form {
+  }
+  &__submit {
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

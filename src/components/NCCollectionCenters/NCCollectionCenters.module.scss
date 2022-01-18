@@ -1,0 +1,44 @@
+@import "../../styles/Variables.scss";
+
+.nc-centers {
+  position: relative;
+  // padding-top: 12rem;
+
+  &__cta {
+    position: fixed;
+    bottom: 5rem;
+    right: 4rem;
+    width: 4rem;
+    height: 4rem;
+    background: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  &__center {
+    position: relative;
+  }
+  &__date {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: translate(1rem, 0.3rem);
+    text-align: center;
+    color: $color-primary;
+    font-weight: 600;
+    &--month {
+      font-size: 1rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    &--day {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+  }
+}

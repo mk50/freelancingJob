@@ -1,0 +1,96 @@
+@import "../../../styles/Variables.scss";
+
+.filters {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+
+  &__item {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    border-radius: 10rem;
+    padding: 0.2rem 1rem;
+    color: $color-grey-dark-2;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+
+    &--label {
+      margin-right: 0.5rem;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &:last-of-type &--label {
+      // text-transform: uppercase;
+    }
+
+    &--counter {
+      margin-right: 0.5rem;
+    }
+
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      padding: 0.2rem 0.5rem 0.2rem 1rem;
+    }
+
+    &--0,
+    &--1 {
+      border: 2px solid $color-grey-dark-2;
+      &-filter {
+        background-color: $color-grey-dark-2;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+
+    &:first-child.filters__item--active,
+    &:nth-child(2).filters__item--active {
+      background: $color-grey-dark-2;
+      color: $color-white;
+    }
+
+    &--2 {
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      &-filter {
+        background-color: $color-primary;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+
+    &:nth-child(3).filters__item--active {
+      background: $color-primary;
+      color: $color-white;
+    }
+
+    &--3 {
+      border: 2px solid $color-secondary;
+      color: $color-secondary;
+      &-filter {
+        background-color: $color-secondary;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+
+    &--4 {
+      border: 2px solid $color-yellow-hard;
+      color: $color-yellow-hard;
+      &-filter {
+        background-color: $color-yellow-hard;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+
+    &:last-child.filters__item--active {
+      background: $color-secondary;
+      color: $color-white;
+    }
+  }
+}

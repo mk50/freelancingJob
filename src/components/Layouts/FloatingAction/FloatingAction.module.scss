@@ -1,0 +1,19 @@
+@import "../../../styles/Variables.scss";
+
+.floating-cta {
+  position: fixed;
+  bottom: 5rem;
+  right: 4rem;
+  width: 4rem;
+  height: 4rem;
+  background: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 4px;
+  z-index: 9999;
+  cursor: pointer;
+}

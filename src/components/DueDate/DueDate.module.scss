@@ -1,0 +1,14 @@
+@import "../../styles/Variables.scss";
+
+.due {
+  &--date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: $color-grey-light-4;
+    border: 1px solid $color-grey-light;
+    padding-left: 2rem;
+    position: sticky;
+    top: 9.8rem;
+    z-index: 9;
+  }
+}

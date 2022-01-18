@@ -1,0 +1,101 @@
+
+{
+    "request": {
+        "method": "POST",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "{{authtoken}}",
+                "type": "text"
+            },
+            {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+            }
+        ],
+        "body": "{user_id,submission_id,question_id,center_id}",
+        "url": "getncdetails"
+    },
+
+    "response" :
+    {
+        "title": "success",
+        "message": "states",
+        "data": [{
+            "nc_id":1,
+            "submission_id":1,
+            "question_id":1,
+            "module_name":"",
+            "question":"",
+            "nc_status":"Pending",
+            "last_audit_date":"2021-10-14",
+            "prevoius_nc_id":1,
+            "last_due_date":"2021-10-25",
+            "default_days":9,
+            "assigned_to":[{
+                "name":"",
+                "role":"",
+                "id":""
+            },{
+                "name":"",
+                "role":"",
+                "id":""
+            },{
+                "name":"",
+                "role":"",
+                "id":""
+            }],
+            "open_data":{
+                "remark_id":1,
+                "date":"2021-10-01",
+                "remark":"",
+                "images":["images/a.jpg","images/a.jpg"],
+                "status":"Pending",
+                "submitted_by":{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                }
+            },
+            "completed_data":{
+                "remark_id":1,
+                "date":"2021-10-01",
+                "remark":"",
+                "images":["images/a.jpg","images/a.jpg"],
+                "status":"Pending",
+                "submitted_by":{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                }
+            },
+            "closed_data":{
+                "remark_id":1,
+                "date":"2021-10-01",
+                "remark":"",
+                "images":["images/a.jpg","images/a.jpg"],
+                "status":"Pending",
+                "submitted_by":{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                }
+            },
+            "rejected_data":{
+                "remark_id":1,
+                "date":"2021-10-01",
+                "remark":"",
+                "images":["images/a.jpg","images/a.jpg"],
+                "status":"Pending",
+                "submitted_by":{
+                    "name":"",
+                    "role":"",
+                    "id":""
+                }
+            }
+           
+        }],
+        "status": true
+    }
+}

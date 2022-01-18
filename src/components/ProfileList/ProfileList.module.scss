@@ -1,0 +1,40 @@
+@import "../../styles/Variables.scss";
+
+.profile-list {
+  padding: 11.5rem 0 2rem 0;
+  &__form {
+    margin: 1rem 0;
+    padding-bottom: 3rem;
+  }
+  &__compilance-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $color-grey-light-2;
+    margin-bottom: 3rem;
+  }
+  &__assigns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  &__paragraph {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 1.4rem;
+    line-height: 1.7;
+    &--large {
+      font-size: 1.6rem;
+    }
+  }
+  &__thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__item {
+  }
+}

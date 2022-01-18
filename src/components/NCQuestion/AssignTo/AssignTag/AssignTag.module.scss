@@ -1,0 +1,25 @@
+@import "../../../../styles/Variables.scss";
+
+.assign {
+  &__tag {
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+
+    &--primary {
+      background: $color-primary-light;
+      border: 1px solid $color-primary-dark;
+      color: $color-primary;
+    }
+    &--secondary {
+      background: $color-secondary-light;
+      border: 1px solid $color-secondary-dark;
+      color: $color-secondary;
+    }
+    &--tertiary {
+      background: $color-yellow-soft;
+      border: 1px solid $color-yellow-hard;
+      color: $color-yellow-hard;
+    }
+  }
+}
